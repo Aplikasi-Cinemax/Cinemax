@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Cinemax</string>
+
+    <string-array name="list_location">
+        <item>Lampung</item>
+        <item>Jakarta</item>
+        <item>Medan</item>
+        <item>Aceh</item>
+    </string-array>
 </resources>

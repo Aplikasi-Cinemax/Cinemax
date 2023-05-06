@@ -22,5 +22,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button signup_btn = (Button) findViewById(R.id.signup_btn);
+        signup_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent billboard_intent = new Intent(v.getContext(), BillBoardActivity.class);
+                startActivity(billboard_intent);
+            }
+        });
     }
 }
