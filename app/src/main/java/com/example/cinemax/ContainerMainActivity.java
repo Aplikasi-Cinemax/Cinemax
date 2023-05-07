@@ -2,6 +2,7 @@ package com.example.cinemax;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -39,6 +40,10 @@ public class ContainerMainActivity extends AppCompatActivity {
                         return true;
                     case R.id.event:
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_container, eventFragment).commit();
+                        return true;
+                    case R.id.profile:
+                        startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                 }
 
