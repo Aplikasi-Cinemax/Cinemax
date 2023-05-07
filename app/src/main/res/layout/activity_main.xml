@@ -60,8 +60,9 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:hint="Enter Your Email"
+                android:textSize="16dp"
                 android:paddingHorizontal="16dp"
-                android:paddingVertical="8dp"
+                android:paddingVertical="12dp"
                 android:background="@drawable/button_textfield_radius"
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"></EditText>
@@ -82,16 +83,17 @@
                 android:layout_below="@+id/label_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
+                android:inputType="textPassword"
                 android:hint="Enter Your Password"
+                android:textSize="16dp"
                 android:paddingHorizontal="16dp"
-                android:paddingVertical="8dp"
+                android:paddingVertical="12dp"
                 android:layout_marginBottom="28dp"
                 android:background="@drawable/button_textfield_radius"
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"></EditText>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signup_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -99,9 +101,10 @@
                 android:text="Create Account"
                 android:drawableRight="@drawable/create_acc_icon"
                 android:textAllCaps="false"
-                android:backgroundTint="@color/background_primary"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/button_main_radius"
                 android:textColor="@color/imperial_red"
-                android:textStyle="bold"></Button>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/or_divider"
@@ -128,14 +131,14 @@
                     android:background="@color/imperial_red"/>
             </LinearLayout>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/login_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/or_divider"
                 android:text="Login"
                 android:textAllCaps="false"
-                android:backgroundTint="@color/imperial_red"></Button>
+                android:background="@drawable/button_radius_red_solid" />
         </RelativeLayout>
 
     </RelativeLayout>

@@ -16,12 +16,10 @@ public class BillboardFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_billboard, container, false);
 
-        String[] list_location = {"Lampung", "Padang", "Medan", "Aceh", "Bengkulu"};
-
         Spinner location_list = (Spinner) v.findViewById(R.id.location_list);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_spinner_item, list_location);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        location_list.setAdapter(adapter);
+        ArrayAdapter<CharSequence> adapterSpinner = ArrayAdapter.createFromResource(this.getActivity(), R.array.list_location, android.R.layout.simple_spinner_item);
+        adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        location_list.setAdapter(adapterSpinner);
 
         // Inflate the layout for this fragment
         return v;

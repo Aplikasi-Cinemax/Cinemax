@@ -14,6 +14,7 @@ public class ContainerMainActivity extends AppCompatActivity {
 
     BillboardFragment billboardFragment = new BillboardFragment();
     ComingSoonFragment comingSoonFragment = new ComingSoonFragment();
+    EventFragment eventFragment = new EventFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,9 @@ public class ContainerMainActivity extends AppCompatActivity {
                         return true;
                     case R.id.comingsoon:
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_container, comingSoonFragment).commit();
+                        return true;
+                    case R.id.event:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.main_container, eventFragment).commit();
                         return true;
                 }
 
