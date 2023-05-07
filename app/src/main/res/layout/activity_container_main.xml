@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BillBoardActivity">
+    tools:context=".ContainerMainActivity">
 
     <FrameLayout
         android:id="@+id/main_container"
@@ -20,8 +20,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:itemTextColor="@color/imperial_red"
-        app:itemIconTint="@color/imperial_red"
+        app:itemTextColor="@color/background_primary"
+        app:itemIconTint="@color/background_primary"
+        app:itemPaddingTop="5dp"
         android:background="@color/background"
         app:menu="@menu/bottom_nav_menu"
         app:labelVisibilityMode="labeled"

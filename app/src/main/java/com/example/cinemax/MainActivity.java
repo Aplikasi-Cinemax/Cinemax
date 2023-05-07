@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         signup_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent billboard_intent = new Intent(v.getContext(), BillBoardActivity.class);
+                Intent billboard_intent = new Intent(v.getContext(), ContainerMainActivity.class);
                 startActivity(billboard_intent);
             }
         });

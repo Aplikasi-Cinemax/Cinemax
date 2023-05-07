@@ -1,29 +1,28 @@
 package com.example.cinemax;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class BillBoardActivity extends AppCompatActivity {
+public class ContainerMainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
     BillboardFragment billboardFragment = new BillboardFragment();
+    ComingSoonFragment comingSoonFragment = new ComingSoonFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bill_board);
+        setContentView(R.layout.activity_container_main);
 
         bottomNavigationView = findViewById(R.id.bottomNavigation);
+
+        bottomNavigationView.setItemIconTintList(null);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.main_container, billboardFragment).commit();
 
@@ -33,6 +32,9 @@ public class BillBoardActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.billboard:
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_container, billboardFragment).commit();
+                        return true;
+                    case R.id.comingsoon:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.main_container, comingSoonFragment).commit();
                         return true;
                 }
 
