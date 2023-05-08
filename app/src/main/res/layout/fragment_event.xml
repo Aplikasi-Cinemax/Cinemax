@@ -149,132 +149,138 @@
 
     </HorizontalScrollView>
 
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/all_events"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/filter_event"
         android:paddingHorizontal="40dp"
-        android:orientation="vertical">
+        app:layout_constraintTop_toBottomOf="@+id/filter_event">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@drawable/button_main_radius"
-                android:layout_marginBottom="20dp">
-
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:background="@drawable/button_main_radius"
-                    android:src="@drawable/event1" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingHorizontal="15dp"
-                    android:paddingVertical="10dp"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/button_main_radius"
+                    android:layout_marginBottom="20dp">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Jelajah \nNusa"
-                        android:textSize="24dp"
-                        android:textColor="@color/imperial_red"
-                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/button_main_radius"
+                        android:src="@drawable/event1" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical"
-                        >
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:orientation="vertical">
+
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="$3.99"
-                            android:textSize="24dp"/>
+                            android:text="Jelajah \nNusa"
+                            android:textSize="24dp"
+                            android:textColor="@color/imperial_red"
+                            android:textStyle="bold" />
 
-                        <ImageButton
-                            android:layout_width="34dp"
-                            android:layout_height="34dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/add_plus"
-                            android:background="@drawable/button_main_radius"
-                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="$3.99"
+                                android:textSize="24dp"/>
+
+                            <ImageButton
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/add_plus"
+                                android:background="@drawable/button_main_radius"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/button_main_radius"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/button_main_radius"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/event2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Police \nMovie Fest"
+                            android:textSize="24dp"
+                            android:textColor="@color/imperial_red"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="$8.99"
+                                android:textSize="24dp"/>
+
+                            <ImageButton
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/add_plus"
+                                android:background="@drawable/button_main_radius"
+                                />
+                        </LinearLayout>
+
                     </LinearLayout>
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@drawable/button_main_radius"
-                android:layout_marginBottom="20dp">
+        </ScrollView>
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:background="@drawable/button_main_radius"
-                    android:src="@drawable/event2" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingHorizontal="15dp"
-                    android:paddingVertical="10dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Police \nMovie Fest"
-                        android:textSize="24dp"
-                        android:textColor="@color/imperial_red"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="$8.99"
-                            android:textSize="24dp"/>
-
-                        <ImageButton
-                            android:layout_width="34dp"
-                            android:layout_height="34dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/add_plus"
-                            android:background="@drawable/button_main_radius"
-                            />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </ScrollView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
