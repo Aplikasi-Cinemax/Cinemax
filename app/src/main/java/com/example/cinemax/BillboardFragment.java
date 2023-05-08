@@ -1,5 +1,6 @@
 package com.example.cinemax;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 public class BillboardFragment extends Fragment {
@@ -20,6 +22,15 @@ public class BillboardFragment extends Fragment {
         ArrayAdapter<CharSequence> adapterSpinner = ArrayAdapter.createFromResource(this.getActivity(), R.array.list_location, android.R.layout.simple_spinner_item);
         adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         location_list.setAdapter(adapterSpinner);
+
+        // onclick profile image button
+        ImageButton profileBtn = (ImageButton) v.findViewById(R.id.profile_btn);
+        profileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(requireContext(), ProfileActivity.class));
+            }
+        });
 
         // Inflate the layout for this fragment
         return v;
