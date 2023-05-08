@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -19,6 +21,14 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(v.getContext(), MainActivity.class));
+            }
+        });
+
+        ImageButton settingBtn = (ImageButton) findViewById(R.id.setting_btn);
+        settingBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(v.getContext(), ProfileSettingActivity.class));
             }
         });
     }
