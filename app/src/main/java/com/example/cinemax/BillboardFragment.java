@@ -3,6 +3,7 @@ package com.example.cinemax;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 public class BillboardFragment extends Fragment {
@@ -29,6 +31,14 @@ public class BillboardFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(requireContext(), ProfileActivity.class));
+            }
+        });
+
+        LinearLayout movieCard = (LinearLayout) v.findViewById(R.id.movie_card);
+        movieCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(requireContext(), DetailMovieActivity.class));
             }
         });
 
