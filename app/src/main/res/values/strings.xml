@@ -9,6 +9,11 @@
         <item>Bengkulu</item>
         <item>Jakarta</item>
     </string-array>
+
+    <string-array name="list_country">
+        <item>Indonesia</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
