@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectDateActivity">
+
+    <RelativeLayout
+        android:id="@+id/select_date_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="15dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/event_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/location_list_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Seat"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/back_btn_setting"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_radius_red_solid"
+            android:scaleType="center"
+            android:src="@drawable/arrow_left" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/pick_seat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/select_date_header"
+        android:layout_marginHorizontal="40dp"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/button_main_radius">
+
+            <LinearLayout
+                android:id="@+id/sheet_movies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <GridLayout
+                    android:id="@+id/left_seat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:columnCount="4">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp"
+                        android:checked="true" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp"
+                        android:checked="true" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp"
+                        android:checked="true" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp"
+                        android:checked="true" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp"
+                        android:checked="true" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp"
+                        android:checked="true" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/right_seat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="4">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/reserved_bg_sheat"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:buttonTint="@android:color/transparent"
+                        android:background="@drawable/seat_background"
+                        android:layout_margin="5dp" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_screen"
+                android:layout_below="@+id/sheet_movies"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/screen_movies" />
+
+            <TextView
+                android:id="@+id/screen_label"
+                android:layout_below="@+id/img_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Screen"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_label"
+                android:gravity="center_horizontal"
+                android:paddingTop="25dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/selected_bg_sheat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selected"
+                        android:paddingLeft="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/reserved_bg_sheat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reserved"
+                        android:paddingLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/available_bg_sheat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pick_seat"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/button_main_radius"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/container_select_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/label_select_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Day"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:id="@+id/radio_select_day"
+                android:layout_below="@id/label_select_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:text="May \n1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="#CBCBCB"
+                    android:padding="5dp"
+                    android:background="@drawable/select_day_selector"
+                    android:layout_marginRight="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:text="May \n2"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="#CBCBCB"
+                    android:padding="5dp"
+                    android:background="@drawable/select_day_selector"
+                    android:layout_marginRight="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:text="May \n3"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="#CBCBCB"
+                    android:padding="5dp"
+                    android:background="@drawable/select_day_selector"
+                    android:layout_marginRight="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:text="May \n4"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="#CBCBCB"
+                    android:padding="5dp"
+                    android:background="@drawable/select_day_selector"
+                    android:layout_marginRight="10dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:text="May \n5"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="#CBCBCB"
+                    android:padding="5dp"
+                    android:background="@drawable/select_day_selector"/>
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_select_time"
+            android:layout_below="@id/container_select_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/label_select_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Day"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:id="@+id/radio_select_time"
+                android:layout_below="@id/label_select_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:text="08:00 PM"
+                    android:textSize="14dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#CBCBCB"
+                    android:background="@drawable/select_day_selector"
+                    android:layout_marginRight="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:text="08:45 PM"
+                    android:textSize="14dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#CBCBCB"
+                    android:background="@drawable/select_day_selector"
+                    android:layout_marginRight="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:text="10:00 PM"
+                    android:textSize="14dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#CBCBCB"
+                    android:background="@drawable/select_day_selector"
+                    android:layout_marginRight="10dp"/>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_select_quality"
+            android:layout_below="@id/container_select_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/label_select_quality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Quality"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:id="@+id/radio_select_quality"
+                android:layout_below="@id/label_select_quality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:text="2D"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#CBCBCB"
+                    android:background="@drawable/select_day_selector"
+                    android:layout_marginRight="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:text="3D"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#CBCBCB"
+                    android:background="@drawable/select_day_selector"
+                    android:layout_marginRight="10dp"/>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/container_select_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_radius_red_solid"
+                android:text="Checkout"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="25dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawablePadding="10dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
