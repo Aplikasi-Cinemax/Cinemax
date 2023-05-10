@@ -30,16 +30,11 @@ public class ComingSoonFragment extends Fragment {
 
         // onclick profile image button
         ImageButton profileBtn = (ImageButton) v.findViewById(R.id.profile_btn);
-        profileBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(requireContext(), ProfileActivity.class));
-            }
-        });
+        profileBtn.setOnClickListener(v1 -> startActivity(new Intent(requireContext(), ProfileActivity.class)));
 
         // GridView
         GridView coming_soon_grid = v.findViewById(R.id.comingsoon_grid);
-        ArrayList<ComingSoonMovieModel> comingSoonMovieModelArrayList = new ArrayList<ComingSoonMovieModel>();
+        ArrayList<ComingSoonMovieModel> comingSoonMovieModelArrayList = new ArrayList<>();
 
         comingSoonMovieModelArrayList.add(new ComingSoonMovieModel("Moonfall", "", R.drawable.moonfall, "Feb, 8 2023"));
         comingSoonMovieModelArrayList.add(new ComingSoonMovieModel("Belfast", "", R.drawable.belfast, "May, 2 2023"));

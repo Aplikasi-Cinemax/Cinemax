@@ -1,11 +1,10 @@
 package com.example.cinemax;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,21 +14,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button login_btn = (Button) findViewById(R.id.login_btn);
-        login_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), SignInActivity.class);
-                startActivity(intent);
-            }
+        login_btn.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), SignInActivity.class);
+            startActivity(intent);
         });
 
         Button signup_btn = (Button) findViewById(R.id.signup_btn);
-        signup_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent billboard_intent = new Intent(v.getContext(), ContainerMainActivity.class);
-                startActivity(billboard_intent);
-            }
+        signup_btn.setOnClickListener(v -> {
+            Intent billboard_intent = new Intent(v.getContext(), ContainerMainActivity.class);
+            startActivity(billboard_intent);
         });
     }
 }

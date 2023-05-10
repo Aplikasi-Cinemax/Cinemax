@@ -1,13 +1,12 @@
 package com.example.cinemax;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ChangeCityActivity extends AppCompatActivity {
 
@@ -32,11 +31,6 @@ public class ChangeCityActivity extends AppCompatActivity {
         cinema_list.setAdapter(adapterCinemaSpinner);
 
         ImageButton backBtnSetting = (ImageButton) findViewById(R.id.back_btn_setting);
-        backBtnSetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(v.getContext(), ProfileActivity.class));
-            }
-        });
+        backBtnSetting.setOnClickListener(v -> startActivity(new Intent(v.getContext(), ProfileActivity.class)));
     }
 }
