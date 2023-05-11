@@ -25,7 +25,8 @@
             android:layout_centerHorizontal="true"
             android:text="Hi User!"
             android:textSize="18dp"
-            android:layout_marginTop="-75dp"></TextView>
+            android:layout_marginTop="-75dp"
+            android:fontFamily="@font/poppins_regular" />
 
         <TextView
             android:id="@+id/get_started"
@@ -35,7 +36,8 @@
             android:layout_centerHorizontal="true"
             android:text="Let's Get Started"
             android:textSize="22dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_extra_bold"></TextView>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -51,7 +53,9 @@
                 android:text="Email"
                 android:textSize="20dp"
                 android:layout_marginBottom="5dp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
             <EditText
                 android:id="@+id/email_input"
@@ -62,10 +66,12 @@
                 android:hint="Enter Your Email"
                 android:textSize="16dp"
                 android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp"
+                android:paddingVertical="10dp"
                 android:background="@drawable/button_textfield_radius"
                 android:textColorHint="@color/white"
-                android:textColor="@color/white"></EditText>
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false" />
 
             <TextView
                 android:id="@+id/label_password"
@@ -76,7 +82,9 @@
                 android:textSize="20dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginBottom="5dp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"/>
 
             <EditText
                 android:id="@+id/password_input"
@@ -87,11 +95,13 @@
                 android:hint="Enter Your Password"
                 android:textSize="16dp"
                 android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp"
+                android:paddingVertical="10dp"
                 android:layout_marginBottom="28dp"
                 android:background="@drawable/button_textfield_radius"
                 android:textColorHint="@color/white"
-                android:textColor="@color/white"></EditText>
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signup_btn"
@@ -104,7 +114,9 @@
                 android:paddingHorizontal="20dp"
                 android:background="@drawable/button_main_radius"
                 android:textColor="@color/imperial_red"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
             <LinearLayout
                 android:id="@+id/or_divider"
@@ -123,7 +135,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="OR"
-                    android:paddingHorizontal="10dp"></TextView>
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false" />
 
                 <View
                     android:layout_width="50dp"
@@ -138,7 +152,9 @@
                 android:layout_below="@id/or_divider"
                 android:text="Login"
                 android:textAllCaps="false"
-                android:background="@drawable/button_radius_red_solid" />
+                android:background="@drawable/button_radius_red_solid"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
         </RelativeLayout>
 
     </RelativeLayout>

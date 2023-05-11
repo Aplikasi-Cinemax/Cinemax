@@ -90,16 +90,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Avengers"
-                android:textSize="28dp"
+                android:textSize="26dp"
                 android:textStyle="bold"
-                android:textColor="@color/imperial_red" />
+                android:textColor="@color/imperial_red"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="End Game"
-                android:textSize="22dp"
-                android:textColor="@color/imperial_red" />
+                android:textSize="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/imperial_red"
+                android:includeFontPadding="false" />
 
         </LinearLayout>
 
@@ -120,7 +124,9 @@
                 android:textStyle="bold"
                 android:paddingVertical="5dp"
                 android:paddingHorizontal="10dp"
-                android:layout_marginEnd="10dp" />
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -131,7 +137,9 @@
                 android:textStyle="bold"
                 android:paddingVertical="5dp"
                 android:paddingHorizontal="10dp"
-                android:layout_marginEnd="10dp" />
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -142,7 +150,9 @@
                 android:textStyle="bold"
                 android:paddingVertical="5dp"
                 android:paddingHorizontal="10dp"
-                android:layout_marginEnd="10dp" />
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
         </LinearLayout>
 
@@ -223,7 +233,9 @@
                 android:layout_height="wrap_content"
                 android:text="Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers..."
                 android:textAlignment="center"
-                android:textSize="16dp"/>
+                android:textSize="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false" />
 
         </RelativeLayout>
 
@@ -248,7 +260,9 @@
             android:paddingHorizontal="25dp"
             android:layout_marginBottom="25dp"
             android:drawableRight="@drawable/arrow_right"
-            android:drawablePadding="10dp"/>
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false" />
 
     </RelativeLayout>
 

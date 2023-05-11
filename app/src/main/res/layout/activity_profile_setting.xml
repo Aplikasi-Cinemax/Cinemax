@@ -30,8 +30,10 @@
                 android:layout_height="wrap_content"
                 android:text="Settings"
                 android:textColor="@color/white"
-                android:textSize="24dp"
-                android:textStyle="bold" />
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
         </RelativeLayout>
 
@@ -82,13 +84,15 @@
             android:text="Update Profile"
             android:paddingVertical="15dp"
             android:textAllCaps="false"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:textStyle="bold"
             android:drawableLeft="@drawable/icon_edit_solid_white"
             android:drawableRight="@drawable/arrow_right"
             android:layout_marginBottom="10dp"
             android:drawablePadding="20dp"
-            android:textAlignment="textStart" />
+            android:textAlignment="textStart"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false" />
 
     </LinearLayout>
 
@@ -108,8 +112,10 @@
             android:layout_weight="1"
             android:text="Request account \ndeleteion"
             android:textColor="@color/imperial_red"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false" />
 
         <ImageButton
             android:layout_width="60dp"

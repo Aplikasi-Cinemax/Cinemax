@@ -37,7 +37,9 @@
                 android:layout_height="wrap_content"
                 android:text="Choose Cinemax"
                 android:textColor="@color/imperial_red"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"/>
 
             <Spinner
                 android:id="@+id/location_list"
@@ -108,23 +110,21 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Know the"
-                android:textSize="18dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="promotions of"
-                android:textSize="18dp" />
+                android:text="Know the promotions of"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Thuesdays &amp; Monday"
                 android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"/>
         </LinearLayout>
 
         <RelativeLayout
@@ -136,7 +136,10 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/button_radius_red_solid"
                 android:padding="10dp"
                 android:src="@drawable/arrow_down_right" />
@@ -165,7 +168,9 @@
             android:text="Services"
             android:textAllCaps="false"
             android:textColor="@color/imperial_red"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"
@@ -173,7 +178,10 @@
             android:layout_weight="50"
             android:background="@drawable/button_main_radius"
             android:text="Theaters"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"/>
 
     </LinearLayout>
 
@@ -225,7 +233,9 @@
                             android:drawableLeft="@drawable/star"
                             android:drawablePadding="8dp"
                             android:text="Premieres"
-                            android:textAllCaps="false" />
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/poppins_bold"
+                            android:includeFontPadding="false"/>
 
                     </RelativeLayout>
 
@@ -243,14 +253,18 @@
                         android:text="Avengers"
                         android:textColor="@color/imperial_red"
                         android:textSize="16dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_bold"
+                        android:includeFontPadding="false" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="End Game"
                         android:textColor="@color/imperial_red"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false" />
 
                 </LinearLayout>
 
@@ -287,7 +301,9 @@
                             android:drawableLeft="@drawable/star"
                             android:drawablePadding="8dp"
                             android:text="Premieres"
-                            android:textAllCaps="false" />
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/poppins_bold"
+                            android:includeFontPadding="false"/>
 
                     </RelativeLayout>
 
@@ -305,14 +321,18 @@
                         android:text="Glass"
                         android:textColor="@color/imperial_red"
                         android:textSize="16dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_bold"
+                        android:includeFontPadding="false" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
                         android:textColor="@color/imperial_red"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false" />
 
                 </LinearLayout>
 
@@ -349,7 +369,9 @@
                             android:drawableLeft="@drawable/star"
                             android:drawablePadding="8dp"
                             android:text="Premieres"
-                            android:textAllCaps="false" />
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/poppins_bold"
+                            android:includeFontPadding="false" />
 
                     </RelativeLayout>
 
@@ -367,14 +389,18 @@
                         android:text="Toy Story 4"
                         android:textColor="@color/imperial_red"
                         android:textSize="16dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_bold"
+                        android:includeFontPadding="false" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
                         android:textColor="@color/imperial_red"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false" />
 
                 </LinearLayout>
 
@@ -411,7 +437,9 @@
                             android:drawableLeft="@drawable/star"
                             android:drawablePadding="8dp"
                             android:text="Premieres"
-                            android:textAllCaps="false" />
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/poppins_bold"
+                            android:includeFontPadding="false" />
 
                     </RelativeLayout>
 
@@ -429,14 +457,18 @@
                         android:text="Joker"
                         android:textColor="@color/imperial_red"
                         android:textSize="16dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_bold"
+                        android:includeFontPadding="false" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
                         android:textColor="@color/imperial_red"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false" />
 
                 </LinearLayout>
 
@@ -473,7 +505,9 @@
                             android:drawableLeft="@drawable/star"
                             android:drawablePadding="8dp"
                             android:text="Premieres"
-                            android:textAllCaps="false" />
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/poppins_bold"
+                            android:includeFontPadding="false" />
 
                     </RelativeLayout>
 
@@ -491,14 +525,18 @@
                         android:text="Star Wars"
                         android:textColor="@color/imperial_red"
                         android:textSize="16dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_bold"
+                        android:includeFontPadding="false" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Episodio IX"
                         android:textColor="@color/imperial_red"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false" />
 
                 </LinearLayout>
 

@@ -21,10 +21,12 @@
             android:layout_height="wrap_content"
             android:text='"Thank you for purchasing your movie ticket with us. We hope you enjoy your movie experience."'
             android:textStyle="bold"
-            android:textSize="24dp"
+            android:textSize="22dp"
             android:paddingHorizontal="20dp"
             android:paddingVertical="50dp"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"/>
 
     </RelativeLayout>
 
@@ -54,15 +56,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Avengers"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="End Game"
-                    android:textSize="16dp"
-                    android:textColor="#4A4B56"/>
+                    android:textSize="12dp"
+                    android:textColor="#4A4B56"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"/>
                 
             </LinearLayout>
 
@@ -76,8 +82,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="7th May, 19:00"
-                    android:textSize="16dp"
-                    android:textColor="#4A4B56"/>
+                    android:textSize="14dp"
+                    android:textColor="#4A4B56"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"/>
 
             </LinearLayout>
 
@@ -91,15 +99,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Cinemax"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lampung"
-                    android:textSize="16dp"
-                    android:textColor="#4A4B56"/>
+                    android:textSize="12dp"
+                    android:textColor="#4A4B56"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false" />
 
             </LinearLayout>
 
@@ -113,15 +125,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Order"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="QW1E0RTY"
-                    android:textSize="16dp"
-                    android:textColor="#4A4B56"/>
+                    android:textSize="12dp"
+                    android:textColor="#4A4B56"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"/>
 
             </LinearLayout>
 
@@ -135,15 +151,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tickets"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3"
-                    android:textSize="16dp"
-                    android:textColor="#4A4B56"/>
+                    android:textSize="12dp"
+                    android:textColor="#4A4B56"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"/>
 
             </LinearLayout>
 
@@ -157,15 +177,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Seating"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="B1 - C1 - C2"
-                    android:textSize="16dp"
-                    android:textColor="#4A4B56"/>
+                    android:textSize="12dp"
+                    android:textColor="#4A4B56"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"/>
 
             </LinearLayout>
 
@@ -229,11 +253,13 @@
             android:text="Return"
             android:textStyle="bold"
             android:textAllCaps="false"
-            android:textSize="18dp"
+            android:textSize="16dp"
             android:paddingVertical="10dp"
             android:paddingHorizontal="25dp"
             android:drawableLeft="@drawable/arrow_left"
-            android:drawablePadding="15dp"/>
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"/>
 
     </LinearLayout>
 

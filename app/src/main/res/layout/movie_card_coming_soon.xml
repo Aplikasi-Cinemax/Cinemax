@@ -38,7 +38,9 @@
                     android:text="Release date | Feb, 2023"
                     android:textSize="10dp"
                     android:textStyle="bold"
-                    android:textAllCaps="false" />
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false" />
 
             </LinearLayout>
 
@@ -59,7 +61,9 @@
                 android:textColor="@color/imperial_red"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false" />
 
             <TextView
                 android:id="@+id/subtitle_movie"
@@ -67,7 +71,9 @@
                 android:layout_height="wrap_content"
                 android:text="End Game"
                 android:textColor="@color/imperial_red"
-                android:textSize="12dp" />
+                android:textSize="12dp"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false" />
 
         </LinearLayout>
 

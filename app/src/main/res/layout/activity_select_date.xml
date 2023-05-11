@@ -30,8 +30,10 @@
                 android:layout_height="wrap_content"
                 android:text="Select Seat"
                 android:textColor="@color/white"
-                android:textSize="24dp"
-                android:textStyle="bold" />
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
         </RelativeLayout>
 
@@ -489,7 +491,9 @@
                 android:layout_height="wrap_content"
                 android:text="Screen"
                 android:gravity="center"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -515,7 +519,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Selected"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -534,7 +540,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Reserved"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false" />
 
                 </LinearLayout>
 
@@ -553,7 +561,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Available"
-                        android:paddingLeft="10dp" />
+                        android:paddingLeft="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false" />
 
                 </LinearLayout>
 
@@ -584,7 +594,9 @@
                 android:text="Select Day"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:gravity="center" />
+                android:gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"/>
 
             <RadioGroup
                 android:id="@+id/radio_select_day"
@@ -601,12 +613,14 @@
                     android:button="@android:color/transparent"
                     android:gravity="center_horizontal"
                     android:text="May \n1"
-                    android:textSize="14dp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:textColor="#CBCBCB"
                     android:padding="5dp"
                     android:background="@drawable/select_day_selector"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -614,12 +628,14 @@
                     android:button="@android:color/transparent"
                     android:gravity="center_horizontal"
                     android:text="May \n2"
-                    android:textSize="14dp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:textColor="#CBCBCB"
                     android:padding="5dp"
                     android:background="@drawable/select_day_selector"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -627,12 +643,14 @@
                     android:button="@android:color/transparent"
                     android:gravity="center_horizontal"
                     android:text="May \n3"
-                    android:textSize="14dp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:textColor="#CBCBCB"
                     android:padding="5dp"
                     android:background="@drawable/select_day_selector"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -640,12 +658,14 @@
                     android:button="@android:color/transparent"
                     android:gravity="center_horizontal"
                     android:text="May \n4"
-                    android:textSize="14dp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:textColor="#CBCBCB"
                     android:padding="5dp"
                     android:background="@drawable/select_day_selector"
-                    android:layout_marginRight="10dp" />
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -653,11 +673,13 @@
                     android:button="@android:color/transparent"
                     android:gravity="center_horizontal"
                     android:text="May \n5"
-                    android:textSize="14dp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:textColor="#CBCBCB"
                     android:padding="5dp"
-                    android:background="@drawable/select_day_selector"/>
+                    android:background="@drawable/select_day_selector"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
 
             </RadioGroup>
@@ -675,10 +697,12 @@
                 android:id="@+id/label_select_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Select Day"
+                android:text="Select Time"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:gravity="center" />
+                android:gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"/>
 
             <RadioGroup
                 android:id="@+id/radio_select_time"
@@ -701,7 +725,9 @@
                     android:textStyle="bold"
                     android:textColor="#CBCBCB"
                     android:background="@drawable/select_day_selector"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -715,7 +741,9 @@
                     android:textStyle="bold"
                     android:textColor="#CBCBCB"
                     android:background="@drawable/select_day_selector"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -729,7 +757,9 @@
                     android:textStyle="bold"
                     android:textColor="#CBCBCB"
                     android:background="@drawable/select_day_selector"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
             </RadioGroup>
 
@@ -749,7 +779,9 @@
                 android:text="Select Quality"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:gravity="center" />
+                android:gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"/>
 
             <RadioGroup
                 android:id="@+id/radio_select_quality"
@@ -773,7 +805,9 @@
                     android:textStyle="bold"
                     android:textColor="#CBCBCB"
                     android:background="@drawable/select_day_selector"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -788,7 +822,9 @@
                     android:textStyle="bold"
                     android:textColor="#CBCBCB"
                     android:background="@drawable/select_day_selector"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"/>
 
             </RadioGroup>
 
@@ -808,11 +844,13 @@
                 android:text="Checkout"
                 android:textStyle="bold"
                 android:textAllCaps="false"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:paddingVertical="10dp"
                 android:paddingHorizontal="25dp"
                 android:drawableRight="@drawable/arrow_right"
-                android:drawablePadding="10dp"/>
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"/>
 
         </RelativeLayout>
 

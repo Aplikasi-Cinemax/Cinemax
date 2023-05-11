@@ -26,7 +26,9 @@
             android:layout_centerHorizontal="true"
             android:text="Welcome Back"
             android:textSize="18dp"
-            android:layout_marginTop="-75dp"></TextView>
+            android:layout_marginTop="-75dp"
+            android:fontFamily="@font/poppins_regular"
+            android:includeFontPadding="false"/>
 
         <TextView
             android:id="@+id/get_started"
@@ -36,7 +38,9 @@
             android:layout_centerHorizontal="true"
             android:text="Please, Log In"
             android:textSize="22dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -52,7 +56,9 @@
                 android:text="Email"
                 android:textSize="20dp"
                 android:layout_marginBottom="5dp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
             <EditText
                 android:id="@+id/email_input"
@@ -66,7 +72,9 @@
                 android:paddingVertical="12dp"
                 android:background="@drawable/button_textfield_radius"
                 android:textColorHint="@color/white"
-                android:textColor="@color/white"></EditText>
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false" />
 
             <TextView
                 android:id="@+id/label_password"
@@ -77,7 +85,9 @@
                 android:textSize="20dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginBottom="5dp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false" />
 
             <EditText
                 android:id="@+id/password_input"
@@ -92,7 +102,9 @@
                 android:layout_marginBottom="28dp"
                 android:background="@drawable/button_textfield_radius"
                 android:textColorHint="@color/white"
-                android:textColor="@color/white"></EditText>
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signin_btn"
@@ -105,7 +117,9 @@
                 android:drawableRight="@drawable/create_acc_icon"
                 android:textColor="@color/imperial_red"
                 android:textStyle="bold"
-                android:paddingHorizontal="20dp" />
+                android:paddingHorizontal="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"/>
 
             <LinearLayout
                 android:id="@+id/or_divider"
@@ -124,7 +138,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="OR"
-                    android:paddingHorizontal="10dp"></TextView>
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"/>
 
                 <View
                     android:layout_width="50dp"
@@ -141,7 +157,9 @@
                 android:textAllCaps="false"
                 android:background="@drawable/button_radius_red_solid"
                 android:paddingHorizontal="20dp"
-                android:drawableLeft="@drawable/saveadd" />
+                android:drawableLeft="@drawable/saveadd"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"/>
         </RelativeLayout>
 
     </RelativeLayout>
