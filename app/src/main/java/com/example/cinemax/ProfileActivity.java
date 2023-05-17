@@ -23,5 +23,13 @@ public class ProfileActivity extends AppCompatActivity {
         AppCompatButton changeCityBtn = (AppCompatButton) findViewById(R.id.change_city_btn);
         changeCityBtn.setOnClickListener(v -> startActivity(new Intent(v.getContext(), ChangeCityActivity.class)));
 
+        ImageButton backBtnSetting = (ImageButton) findViewById(R.id.back_btn_setting);
+        backBtnSetting.setOnClickListener(v -> startActivity(new Intent(v.getContext(), MainActivity.class)));
+
+        AppCompatButton ticketBtn = (AppCompatButton) findViewById(R.id.my_ticket_btn);
+        ticketBtn.setOnClickListener(v -> startActivity(new Intent(v.getContext(), MyTicketsActivity.class)));
+
+        AppCompatButton historyBtn = (AppCompatButton) findViewById(R.id.history_btn);
+        historyBtn.setOnClickListener(v -> startActivity(new Intent(v.getContext(), HistoryActivity.class)));
     }
 }
