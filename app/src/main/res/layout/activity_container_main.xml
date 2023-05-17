@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:itemTextColor="@color/background_primary"
+        app:itemTextColor="@color/bottom_nav_active_text"
         app:itemIconTint="@color/background_primary"
         app:itemPaddingTop="5dp"
         android:background="@color/background"
